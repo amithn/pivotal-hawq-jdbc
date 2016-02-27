@@ -23,11 +23,12 @@ Run `HAWQJDBCApp` from an IDE
 
 That would create an external table using the following DDL:
 --
-`CREATE EXTERNAL TABLE tablename (id text, score int) --
-
-LOCATION('pxf://NAMENODE-URI:50070/user/{some dir on HDFS}//scores.txt?profile=HdfsTextSimple') --
-
-FORMAT 'CSV'  (DELIMITER = ',')` --
+`CREATE EXTERNAL TABLE tablename (id text, score int) 
+--
+LOCATION('pxf://NAMENODE-URI:50070/user/{some dir on HDFS}//scores.txt?profile=HdfsTextSimple') 
+--
+FORMAT 'CSV'  (DELIMITER = ',')` 
+--
 
 #Step 5
 Finally the app queries the data in the table it just created. 
