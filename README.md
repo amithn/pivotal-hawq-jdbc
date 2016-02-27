@@ -20,7 +20,6 @@ Copy it onto HDFS like:
 
 #Step 4
 Run `HAWQJDBCApp` from an IDE 
-
 That would create an external table using the following DDL:
 --
 `CREATE EXTERNAL TABLE tablename (id text, score int) 
