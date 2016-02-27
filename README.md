@@ -19,6 +19,7 @@ Copy it onto HDFS like:
 `hadoop fs -copyFromLocal scores.txt /user/{some dir on HDFS}/`
 
 #Step 4
+
 Run `HAWQJDBCApp` from an IDE 
 That would create an external table using the following DDL:
 --
