@@ -22,6 +22,8 @@ Copy it onto HDFS like:
 Run `HAWQJDBCApp` from an IDE 
 
 That would create an external table using the following DDL:
+--
+
 `CREATE EXTERNAL TABLE tablename (id text, score int) 
 LOCATION('pxf://NAMENODE-URI:50070/user/{some dir on HDFS}//scores.txt?profile=HdfsTextSimple')
 FORMAT 'CSV'  (DELIMITER = ',')`
