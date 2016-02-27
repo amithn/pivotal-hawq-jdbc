@@ -22,10 +22,9 @@ Copy it onto HDFS like:
 Run `HAWQJDBCApp` from an IDE 
 
 That would create an external table using the following DDL:
-`String CREATE_EXT_TABLE_DDL = " CREATE EXTERNAL TABLE " + extTableName  +
-                          " (id text, score int) " +
-                          " LOCATION('pxf://NAMENODE-URI:50070/user/{some dir on HDFS}//scores.txt?profile=HdfsTextSimple')"+
-                          " FORMAT 'CSV'  (DELIMITER = ',');";`
+`CREATE EXTERNAL TABLE tablename (id text, score int) 
+LOCATION('pxf://NAMENODE-URI:50070/user/{some dir on HDFS}//scores.txt?profile=HdfsTextSimple')
+FORMAT 'CSV'  (DELIMITER = ',')`
 
 #Step 5
 Finally the app queries the data in the table it just created. 
