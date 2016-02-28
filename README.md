@@ -2,7 +2,7 @@
 Acess Pivotal HAWQ using JDBC 
 
 An example on how you can query CSV files on Hadoop using HAWQ. 
-This does require HAWQ to be installed on the cluster.
+This does require [HAWQ](http://pivotal.io/big-data/white-paper/a-true-sql-engine-for-hadoop-pivotal-hd-hawq) & [PXF](http://pivotalhd-210.docs.pivotal.io/doc/2010/PivotalExtensionFrameworkPXF.html) to be installed on the cluster.
 
 #Step 1
 git clone git@github.com:amithn/pivotal-hawq-jdbc.git
