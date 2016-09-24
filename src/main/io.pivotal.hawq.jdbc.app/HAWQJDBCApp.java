@@ -37,7 +37,7 @@ public class HAWQJDBCApp {
         st = connection.createStatement();
         ResultSet rs = st.executeQuery("SELECT * FROM scores ORDER BY score DESC");
 
-        System.out.println("Rows from scores table cxp." + extTableName + " :");
+        System.out.println("Rows from scores table " + extTableName + " :");
 
         while (rs.next())
         {
